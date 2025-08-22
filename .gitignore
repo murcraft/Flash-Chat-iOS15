@@ -1,0 +1,50 @@
+#============================================================================
+# Swift/Xcode
+#============================================================================
+
+## User-specific
+*.xcuserdatad
+*.xcworkspace
+xcuserdata/
+
+## Build generated
+build/
+Build/
+DerivedData/
+*.o
+*.out
+*.dia
+*.tlog
+*.swiftmodule
+*.swiftdoc
+*.gcno
+*.gcda
+*.gcov
+
+## Test results
+*.xcresult
+
+## Dependency Managers
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+*.resolved
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved # Often committed for applications, but ignored for libraries
+
+## System files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
