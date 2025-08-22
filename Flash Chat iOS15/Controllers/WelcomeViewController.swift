@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import GhostTypewriter
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: TypewriterLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        titleLabel.text = "⚡️FlashChat"
+        titleLabel.startTypewritingAnimation()
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        titleLabel.restartTypewritingAnimation()
+    }
 }
