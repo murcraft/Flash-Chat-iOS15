@@ -6,6 +6,7 @@
 *.xcuserdatad
 *.xcworkspace
 xcuserdata/
+*.xcuserdatad/xcschemes/xcschememanagement.plist
 
 ## Build generated
 build/
