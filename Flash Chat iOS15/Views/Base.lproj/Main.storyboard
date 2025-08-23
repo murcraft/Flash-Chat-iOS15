@@ -95,8 +95,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-xD-C7r">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u72-XV-6FN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" toolTip="Type the email" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u72-XV-6FN">
                                         <rect key="frame" x="48" y="50" width="318" height="45"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Type an email to register" label="Email"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>

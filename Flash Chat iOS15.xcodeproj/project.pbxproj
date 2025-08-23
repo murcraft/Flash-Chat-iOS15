@@ -40,6 +40,7 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D32BAF252E5A422A00A48EFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D32BAF342E5A46C200A48EFC /* Flash Chat iOS15.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Flash Chat iOS15.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		0B628175235DEE8100E35CAF /* Flash Chat iOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				D32BAF342E5A46C200A48EFC /* Flash Chat iOS15.entitlements */,
 				0B628176235DEE8100E35CAF /* AppDelegate.swift */,
 				0B628178235DEE8100E35CAF /* SceneDelegate.swift */,
 				0B628194235DF03A00E35CAF /* Models */,
@@ -350,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Flash Chat iOS15/Flash Chat iOS15.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RU5Z9J9H27;
 				INFOPLIST_FILE = "Flash Chat iOS15/Info.plist";
@@ -370,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Flash Chat iOS15/Flash Chat iOS15.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Flash Chat iOS15/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Flash Chat";
