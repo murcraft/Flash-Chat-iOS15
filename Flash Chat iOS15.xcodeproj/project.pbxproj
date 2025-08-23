@@ -17,6 +17,13 @@
 		0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818E235DF01000E35CAF /* LoginViewController.swift */; };
 		0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* ChatViewController.swift */; };
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
+		D32BAF262E5A422A00A48EFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D32BAF252E5A422A00A48EFC /* GoogleService-Info.plist */; };
+		D32BAF292E5A42F800A48EFC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF282E5A42F800A48EFC /* FirebaseAuth */; };
+		D32BAF2B2E5A42F800A48EFC /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF2A2E5A42F800A48EFC /* FirebaseAuthCombine-Community */; };
+		D32BAF2D2E5A42F800A48EFC /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF2C2E5A42F800A48EFC /* FirebaseCore */; };
+		D32BAF2F2E5A42F800A48EFC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF2E2E5A42F800A48EFC /* FirebaseDatabase */; };
+		D32BAF312E5A42F800A48EFC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF302E5A42F800A48EFC /* FirebaseStorage */; };
+		D32BAF332E5A42F800A48EFC /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D32BAF322E5A42F800A48EFC /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,7 @@
 		0B62818E235DF01000E35CAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D32BAF252E5A422A00A48EFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32BAF292E5A42F800A48EFC /* FirebaseAuth in Frameworks */,
+				D32BAF2D2E5A42F800A48EFC /* FirebaseCore in Frameworks */,
+				D32BAF2F2E5A42F800A48EFC /* FirebaseDatabase in Frameworks */,
+				D32BAF312E5A42F800A48EFC /* FirebaseStorage in Frameworks */,
+				D32BAF332E5A42F800A48EFC /* FirebaseStorageCombine-Community in Frameworks */,
+				D32BAF2B2E5A42F800A48EFC /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +87,7 @@
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
+				D32BAF252E5A422A00A48EFC /* GoogleService-Info.plist */,
 			);
 			path = "Flash Chat iOS15";
 			sourceTree = "<group>";
@@ -148,6 +163,9 @@
 				Base,
 			);
 			mainGroup = 0B62816A235DEE8100E35CAF;
+			packageReferences = (
+				D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,6 +182,7 @@
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
+				D32BAF262E5A422A00A48EFC /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 			);
@@ -388,6 +407,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D32BAF282E5A42F800A48EFC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D32BAF2A2E5A42F800A48EFC /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		D32BAF2C2E5A42F800A48EFC /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		D32BAF2E2E5A42F800A48EFC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		D32BAF302E5A42F800A48EFC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		D32BAF322E5A42F800A48EFC /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D32BAF272E5A42F800A48EFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B62816B235DEE8100E35CAF /* Project object */;
 }
